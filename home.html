@@ -5,12 +5,158 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="Description" content="Enter your description here"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/hamburgers.min.css">
 <link rel="stylesheet" href="css/style.css">
 <title>Shopito</title>
 </head>
 <body>
+
+    <nav>
+        <div class="container d-flex align-items-center justify-content-between">
+            <div class="logo">
+                <a class="desktop" href="home.html">
+                    <img class="img-fluid" src="images/logo.png" alt="logo da empresa" />
+                </a>
+                <button class="hamburger mobile hamburger--collapse" type="button">
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                    </span>
+                  </button>
+            </div><!--logo-->
+
+
+            <form class="search-wrapper">
+                <input class="search-wrapper__input  desktop" type="text" name="pesquisa" placeholder="O que você procura?"/>
+                <input class="d-none" type="submit" name="acao" value="" id="pesquisar" />
+                <label for="pesquisar desktop">
+                    <img class="img-fluid desktop" src="images/lupa.svg" alt="lupa" />
+                </label>
+                <a class="mobile" href="home.html">
+                    <img class="img-fluid" src="images/logo.png" alt="logo da empresa" />
+                </a>
+            </form><!--search-wrapper-->
+
+
+            <div class="icones d-flex justify-content-around">
+                <div class="icones__wrapper d-flex align-items-center">
+                    <img class="mobile" class="img-fluid" src="images/lupa.svg" alt="lupa" />
+                    <a href="#"><img class="img-fluid" src="images/suport.svg" alt="icone de contato" /></a>
+                    <a class="desktop" href="#">Contato</a>
+                </div><!--icones__wrapper-->
+
+                <div class="icones__wrapper d-flex align-items-center">
+                    <a  class="mobile" href="#"><img class="img-fluid" src="images/suport.svg" alt="icone de contato" /></a>
+                    <a href="#"><img class="img-fluid" src="images/user.svg" alt="icone de usuário" /></a>
+                    <a class="desktop" href="#">Entrar</a>
+                </div><!--icones__wrapper-->
+
+                <div class="icones__wrapper-bag d-flex align-items-center">
+                    <img class="img-fluid" src="images/bag.svg" alt="icone de sacola" />
+                    <h6 class="bag-quantity d-flex align-items-center justify-content-center">0</h6>
+                </div><!--icones__wrapper-->
+            </div><!--icones-->
+        </div><!--container-->
+    </nav>
+
+    <section class="nav">
+        <div class="container d-flex align-items-center justify-content-center">
+            <ul class="d-flex align-items-center">
+                <div class="wrapper-subnav">
+                    <li><a href="#">Promoções</a></li>
+                    <div class="sub-nav">
+                        <div class="d-flex justify-content-between">
+                        <ul>
+                        <h6 class="title-nav">Calçados</h6>
+                          
+                                <li><a class="subnav-item" href="#">Botas</a></li>
+                                <li><a class="subnav-item" href="#">Chinelos</a></li>
+                                <li><a class="subnav-item" href="#">Linha conforto</a></li>
+                                <li><a class="subnav-item" href="#">Mocassins</a></li>
+                                <li><a class="subnav-item" href="#">Peeep toes</a></li>
+                                <li><a class="subnav-item" href="#">Sapatilhas</a></li>
+                                <li><a class="subnav-item" href="#">Rasteiras</a></li>
+                                <li><a class="subnav-item" href="#">Sandálias</a></li>
+                                <li><a class="subnav-item" href="#">Tênis</a></li>
+                                <li><a class="subnav-item" class="todos" href="#">Ver todos</a></li>
+                        </ul>
+                        
+  
+                        <ul class="mx-item">
+                                <h6 class="title-nav">Roupas</h6>
+                                        
+                                            <li><a class="subnav-item" href="#">Botas</a></li>
+                                            <li><a class="subnav-item" href="#">Chinelos</a></li>
+                                            <li><a class="subnav-item" href="#">Linha conforto</a></li>
+                                            <li><a class="subnav-item" href="#">Mocassins</a></li>
+                                            <li><a class="subnav-item" href="#">Peeep toes</a></li>
+                                            <li><a class="subnav-item" href="#">Sapatilhas</a></li>
+                                            <li><a class="subnav-item" href="#">Rasteiras</a></li>
+                                            <li><a class="subnav-item" href="#">Sandálias</a></li>
+                                            <li><a class="subnav-item" href="#">Tênis</a></li>
+                                            <li><a class="subnav-item" class="todos" href="#">Ver todos</a></li>
+                        </ul>
+                                        
+                                
+                                    
+                        <ul class="mx-item">
+                                        <h6 class="title-nav">Plus size</h6>
+
+                                                <li><a class="subnav-item" href="#">Botas</a></li>
+                                                <li><a class="subnav-item" href="#">Chinelos</a></li>
+                                                <li><a class="subnav-item" href="#">Linha conforto</a></li>
+                                                <li><a class="subnav-item" href="#">Mocassins</a></li>
+                                                <li><a class="subnav-item" href="#">Peeep toes</a></li>
+                                                <li><a class="subnav-item" href="#">Sapatilhas</a></li>
+                                                <li><a class="subnav-item" href="#">Rasteiras</a></li>
+                                                <li><a class="subnav-item" href="#">Sandálias</a></li>
+                                                <li><a class="subnav-item" href="#">Tênis</a></li>
+                                                <li><a class="subnav-item" class="todos" href="#">Ver todos</a></li>
+                        </ul>
+                                    
+                        <ul class="mx-item">
+                                        <h6 class="title-nav">Moda íntima</h6>
+                                          
+                                                <li><a class="subnav-item" href="#">Botas</a></li>
+                                                <li><a class="subnav-item" href="#">Chinelos</a></li>
+                                                <li><a class="subnav-item" href="#">Linha conforto</a></li>
+                                                <li><a class="subnav-item" href="#">Mocassins</a></li>
+                                                <li><a class="subnav-item" href="#">Peeep toes</a></li>
+                                                <li><a class="subnav-item" href="#">Sapatilhas</a></li>
+                                                <li><a class="subnav-item" href="#">Rasteiras</a></li>
+                                                <li><a class="subnav-item" href="#">Sandálias</a></li>
+                                                <li><a class="subnav-item" href="#">Tênis</a></li>
+                                                <li><a class="subnav-item" class="todos" href="#">Ver todos</a></li>
+                        </ul> 
+
+                        <ul class="mx-item">
+                                        <h6 class="title-nav">Acessórios</h6>
+                                          
+                                                <li><a class="subnav-item" href="#">Botas</a></li>
+                                                <li><a class="subnav-item" href="#">Chinelos</a></li>
+                                                <li><a class="subnav-item" href="#">Linha conforto</a></li>
+                                                <li><a class="subnav-item" href="#">Mocassins</a></li>
+                                                <li><a class="subnav-item" href="#">Peeep toes</a></li>
+                                                <li><a class="subnav-item" href="#">Sapatilhas</a></li>
+                                                <li><a class="subnav-item" href="#">Rasteiras</a></li>
+                                                <li><a class="subnav-item" href="#">Sandálias</a></li>
+                                                <li><a class="subnav-item" href="#">Tênis</a></li>
+                                                <li><a class="subnav-item" class="todos" href="#">Ver todos</a></li>
+                        </ul> 
+                            
+                        </div><!--flex-->
+                       
+                    
+                    </div><!--sub nav-->
+                </div><!--wrapper-nav-->
+
+               
+            </ul>
+        </div><!--container-->
+    </section><!--nav-->
 
 <script src="js/burger.js"></script>
 <script src="js/main.js"></script>
