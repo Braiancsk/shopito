@@ -27,3 +27,23 @@ burger.addEventListener('click', ()=>{
      document.body.style.overflow = 'auto';
      bg.style.display = 'none';
    });
+
+
+//ativar lupa no mobile
+
+let pesquisa = document.getElementById('pesquisa-mobile');
+let lupa = document.getElementById('lupa-mobile');
+
+lupa.addEventListener('click',()=>{
+  pesquisa.classList.toggle('active-search');
+})
+
+
+//abrir modal de filtro
+let modalBtn = document.getElementById('open-modal-filtro');
+
+modalBtn.addEventListener('click',()=>{
+  Swal.fire({
+    template: '#my-template'
+  })
+})
