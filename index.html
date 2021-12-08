@@ -403,11 +403,76 @@
         <img src="images/email-menu.svg" alt="icone email" />
 
     </div>
-
-
 </aside>
 <div class="bg"></div>
-<!--fim do menu mobile-->    
+<!--fim do menu mobile-->   
+
+
+<!--Carrinho lateral-->
+<aside class="cart">
+
+    <div class="d-flex justify-content-between align-items-center">
+        <h2>Carrinho</h2>
+        <img id="closeCart" src="images/close.svg" alt="icone para fechar" />
+    </div>
+    
+
+    <!--se o carrinho estiver vázio-->
+    <!-- <div class="vazio d-flex flex-column align-items-center justify-content-center mt-4">
+        <h4>Seu carrinho está vazio</h4>
+        <img class="img-fluid" src="images/plants.png" alt="carrinho vazio" />
+    </div> -->
+
+
+    <div class="container h-100 d-flex flex-column justify-content-between">
+        <div class="row">
+            <div class="col-4">
+                <img class="cart__img" src="images/product.jpg" alt="produto" />
+            </div><!--col-3-->
+
+            <div class="col-8">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="cart__title">
+                        <h5>Tênis masculino</h5>
+                        <p>Lorem Ipsum Silor Amet Lorem Ipsum Silor Amet</p>
+                    </div><!--cart__titlee-->
+
+                    <div class="excluir">
+                        <img class="exluir-btn" src="images/trash.svg" alt="icone de exluir"/>
+                    </div><!--excluir-->
+                    
+                </div><!--flex-->
+
+                <div class="d-flex justify-content-between align-items-center">
+                    <h4 class="cart__price">R$ 180,00</h4>
+                    <div class="d-flex align-items-center">
+                        <button class="down d-flex align-items-center justify-content-center">
+                            <img class="max-w-7" src="images/down.svg" alt="seta para subtrair">
+                        </button><!--down-->
+                        
+                        <input disabled id="quantidade" type="text" class="quantidade" name="quantidade" value="1"/>
+
+                        <button class="up d-flex align-items-center justify-content-center">
+                            <img class="max-w-7" src="images/up.svg" alt="seta para somar">
+                        </button><!--down-->
+                    </div><!--dflex-->
+                </div><!--flex-->
+
+                <p class="cart__extras">2x (nome do extra), 1x (nome do extra 2), 2x (nome do extra)</p>
+            </div><!--col-md-9-->
+        </div><!--row-->
+
+        <div class="wrapper">
+            <h2>Valor total: <b>R$ 180,00</b></h2>
+        
+            <a class="btn-finalizar" href="checkout.html">Finalizar compra</a>
+        </div>
+        
+        
+    </div><!--container-->   
+</aside><!--cart-->
+
+<!--Fim do carrinho lateral-->
 
     <nav>
         <div class="container d-flex align-items-center justify-content-between">

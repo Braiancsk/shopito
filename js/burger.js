@@ -23,6 +23,7 @@ burger.addEventListener('click', ()=>{
 
    bg.addEventListener('click', ()=>{
      menu.classList.remove('menu-active');
+     cart.classList.remove('cart-active');
      burger.classList.remove('is-active');
      document.body.style.overflow = 'auto';
      bg.style.display = 'none';
@@ -47,3 +48,30 @@ modalBtn.addEventListener('click',()=>{
     template: '#my-template'
   })
 })
+
+
+//cart lateral
+//script para acionar o menu mobile
+let cart = document.querySelector('.cart');
+let cartBtn = document.querySelector('.icones__wrapper-bag');
+let closeCart = document.getElementById('closeCart');
+
+cartBtn.addEventListener('click', ()=>{
+  cart.classList.toggle('cart-active');
+  
+   if(cart.classList.contains('cart-active')){
+     document.body.style.overflow = 'hidden';
+     bg.style.display = 'block';
+   }else{
+     document.body.style.overflow = 'auto';
+     bg.style.display = 'none';
+   }
+});
+
+closeCart.addEventListener('click', ()=>{
+  cart.classList.remove('cart-active');
+     document.body.style.overflow = 'auto';
+     bg.style.display = 'none';
+})
+
+
