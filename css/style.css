@@ -156,8 +156,11 @@ body{
 }
 
 nav{
-    padding: 30px 0;
+    padding: 20px 0;
     background-color:white;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
 .search-wrapper{
@@ -204,6 +207,7 @@ nav{
     overflow: auto !important;
     display: flex !important;
     justify-content: center !important;
+    padding: 20px 0;
 }
 
 .search-wrapper-mobile{
@@ -380,7 +384,7 @@ form.logar label{
 section.nav{
     background: #F5F5F5;
     box-shadow: 0px 8px 24px rgba(186, 186, 186, 0.2);
-    padding: 23px 0;
+    padding: 10px 0;
 }
 
 section.nav ul li{
@@ -532,7 +536,7 @@ section.slide-categorias .container:after{
     content:"";
     background: #E5E5E5;
     width: 80px;
-    height:95px;
+    height:115px;
     position:absolute;
     right: 0;
     top:0;
@@ -786,7 +790,7 @@ section.produtos h1{
     width: 100%;
     height:100vh;
     background: #000000b4;
-    z-index: 9;
+    z-index: 999;
     position: fixed;
     top: 0;
     left: 0;
@@ -908,6 +912,7 @@ section.description p{
 
 .pagination-bar{
     background: #E5E5E5;
+    z-index: 0;
 }
 .page-item{
     margin: 0 10px;
@@ -1014,6 +1019,9 @@ footer .empresa img{
     .app{
         margin: 30px 0;
     }
+    section.nav{
+        padding: 0;
+    }
 }
 
 @media screen and (max-width: 500px){
@@ -1032,5 +1040,17 @@ footer .empresa img{
     }
     .card__info{
         padding: 15px;
+    }
+
+    header > .container{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .swiper {
+        height: 300px;
+    }
+    
+    .swiper-slide img{
+        height: 300px;
     }
 }
