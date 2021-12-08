@@ -36,3 +36,21 @@ const swiper = new Swiper('.swiper', {
     
   });  
 
+
+  
+  const swiper4 = new Swiper('.swiper4', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: false,
+    slidesPerView: 'auto',
+    spaceBetween: 30,
+    centeredSlide: false,
+    breakpoints: {
+        768: {
+            slidesPerView: 3,
+          spaceBetween: 40,
+        },
+    }    
+    
+  });  
+

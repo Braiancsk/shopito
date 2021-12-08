@@ -1082,59 +1082,59 @@
             <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide">
-                <div class="d-flex flex-column align-items-center">
+                <a href="#" class="d-flex flex-column align-items-center text-decoration-none">
                     <img class="img-fluid" src="images/slide.jpg" alt="imagem de slide" />
-                    <h6 class="categoria-name">Todas</h6>
-                </div>
+                    <h6 class="categoria-name mt-3">Todas</h6>
+                </a>
             </div><!--slide-->
 
             <div class="swiper-slide">
-                <div class="d-flex flex-column align-items-center">
+                <a href="#" class="d-flex flex-column align-items-center text-decoration-none">
+                    <img class="img-fluid" src="images/product.jpg" alt="imagem de slide" />
+                    <h6 class="categoria-name mt-3">Nome da categoria</h6>
+                </a>
+            </div><!--slide-->
+
+            <div class="swiper-slide">
+                <a href="#" class="d-flex flex-column align-items-center text-decoration-none">
                     <img class="img-fluid" src="images/slide-2.jpg" alt="imagem de slide" />
-                    <h6 class="categoria-name">Nome da categoria</h6>
-                </div>
+                    <h6 class="categoria-name mt-3">Nome da categoria</h6>
+                </a>
             </div><!--slide-->
 
             <div class="swiper-slide">
-                <div class="d-flex flex-column align-items-center">
+                <a href="#" class="d-flex flex-column align-items-center text-decoration-none">
                     <img class="img-fluid" src="images/slide-3.jpg" alt="imagem de slide" />
-                    <h6 class="categoria-name">Nome da categoria</h6>
-                </div>
+                    <h6 class="categoria-name mt-3">Nome da categoria</h6>
+                </a>
             </div><!--slide-->
 
             <div class="swiper-slide">
-                <div class="d-flex flex-column align-items-center">
+                <a href="#" class="d-flex flex-column align-items-center text-decoration-none">
                     <img class="img-fluid" src="images/slide-2.jpg" alt="imagem de slide" />
-                    <h6 class="categoria-name">Nome da categoria</h6>
-                </div>
+                    <h6 class="categoria-name mt-3">Nome da categoria</h6>
+                </a>
             </div><!--slide-->
 
             <div class="swiper-slide">
-                <div class="d-flex flex-column align-items-center">
+                <a href="#" class="d-flex flex-column align-items-center text-decoration-none">
                     <img class="img-fluid" src="images/slide.jpg" alt="imagem de slide" />
-                    <h6 class="categoria-name">Nome da categoria</h6>
-                </div>
+                    <h6 class="categoria-name mt-3">Nome da categoria</h6>
+                </a>
             </div><!--slide-->
 
             <div class="swiper-slide">
-                <div class="d-flex flex-column align-items-center">
+                <a href="#" class="d-flex flex-column align-items-center text-decoration-none">
                     <img class="img-fluid" src="images/slide-3.jpg" alt="imagem de slide" />
-                    <h6 class="categoria-name">Nome da categoria</h6>
-                </div>
+                    <h6 class="categoria-name mt-3">Nome da categoria</h6>
+                </a>
             </div><!--slide-->
 
             <div class="swiper-slide">
-                <div class="d-flex flex-column align-items-center">
+                <a href="#" class="d-flex flex-column align-items-center text-decoration-none">
                     <img class="img-fluid" src="images/slide-2.jpg" alt="imagem de slide" />
-                    <h6 class="categoria-name">Nome da categoria</h6>
-                </div>
-            </div><!--slide-->
-
-            <div class="swiper-slide">
-                <div class="d-flex flex-column align-items-center">
-                    <img class="img-fluid" src="images/slide-3.jpg" alt="imagem de slide" />
-                    <h6 class="categoria-name">Nome da categoria</h6>
-                </div>
+                    <h6 class="categoria-name mt-3">Nome da categoria</h6>
+                </a>
             </div><!--slide-->
 
             </div><!--swiper-wrapper-->
@@ -1214,24 +1214,138 @@
                 </div><!--flex-->
 
                 <!--modal de produto-->
-                <div class="modal-produto">
+                <div id="modal-produto" class="modal-produto">
                     <div class="container">
-                        <div class="row">
+                        <section class="d-flex justify-content-end"><img id="closeModal" src="images/close.svg" alt="icone fechar"></section>
+                        <div class="row my-5">
                             <div class="col-md-6">
-                             
+                                <div class="produto-img">
+                                    <div class="tab-content" id="nav-tabContent">
+                                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                            <img class="img-produto" src="images/img-produto.jpg" alt="produto" />
+                                        </div>
+                                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                            <img class="img-produto" src="images/img-produto.jpg" alt="produto" />
+                                        </div>
+                                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                            <img class="img-produto" src="images/img-produto.jpg" alt="produto" />
+                                        </div>
+
+                                        <div class="tab-pane fade" id="produto-4" role="tabpanel" aria-labelledby="produto-4-tab">
+                                            <img class="img-produto" src="images/img-produto.jpg" alt="produto" />
+                                        </div>
+                                      </div>
+                                    
+                                </div><!--produto-img-->
+                                
+                                <nav class="swiper4">
+                                    <div class="swiper-wrapper nav nav-tabs" id="nav-tab" role="tablist">
+                                      <button class="swiper-slide nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+                                          <img class="img-produto-tab" src="images/product.jpg" alt="produto" />
+                                      </button>
+                                      <button class="swiper-slide nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                                        <img class="img-produto-tab" src="images/product.jpg" alt="produto" />
+                                      </button>
+                                      <button class="swiper-slide nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+                                        <img class="img-produto-tab" src="images/product.jpg" alt="produto" />
+                                      </button>
+
+                                      <button class="swiper-slide nav-link" id="produto-4-tab" data-bs-toggle="tab" data-bs-target="#produto-4" type="button" role="tab" aria-controls="produto-4" aria-selected="false">
+                                        <img class="img-produto-tab" src="images/product.jpg" alt="produto" />
+                                      </button>
+                                    </div>
+                                </nav>
+
+                            </div><!--col-md-6-->
+
+
+                            <div class="col-md-6 produto-preco">
+                                <h2>Tênis Masculino</h2>
+                                <p>Lorem Ipsum slior amet. Lorem ipsum silor amet</p>
+                                <h3>R$ 180,00</h3>
+                                <h6>Ou 12x de R$ 15,00</h6>
+
+
+                                <div class="extra mt-5">
+                                    <p>Escolha uma cor:</p>
+
+                                    <div class="d-flex justify-content-between mt-4">
+                                        <h6>Vermelho</h6>
+
+                                        <div class="d-flex align-items-center">
+                                            <button class="down d-flex align-items-center justify-content-center">
+                                                <img class="max-w-7" src="images/down.svg" alt="seta para subtrair">
+                                            </button><!--down-->
+                                            
+                                            <input disabled id="quantidade" type="text" class="quantidade" name="quantidade" value="1"/>
+                
+                                            <button class="up d-flex align-items-center justify-content-center">
+                                                <img class="max-w-7" src="images/up.svg" alt="seta para somar">
+                                            </button><!--down-->
+                                        </div><!--dflex-->
+                                    </div><!--d-flex-->    
+                                    
+                                    <div class="d-flex justify-content-between mt-4">
+                                        <h6>Verde</h6>
+
+                                        <div class="d-flex align-items-center">
+                                            <button class="down d-flex align-items-center justify-content-center">
+                                                <img class="max-w-7" src="images/down.svg" alt="seta para subtrair">
+                                            </button><!--down-->
+                                            
+                                            <input disabled id="quantidade" type="text" class="quantidade" name="quantidade" value="1"/>
+                
+                                            <button class="up d-flex align-items-center justify-content-center">
+                                                <img class="max-w-7" src="images/up.svg" alt="seta para somar">
+                                            </button><!--down-->
+                                        </div><!--dflex-->
+                                    </div><!--d-flex-->    
+                                </div><!--extra-->
+
+
+                                <div class="extra mt-5">
+                                    <p>Escolha uma tamanho:</p>
+
+                                    <div class="d-flex justify-content-between">
+                                        <h6>Pequeno</h6>
+
+                                        <div class="d-flex align-items-center">
+                                            <button class="down d-flex align-items-center justify-content-center">
+                                                <img class="max-w-7" src="images/down.svg" alt="seta para subtrair">
+                                            </button><!--down-->
+                                            
+                                            <input disabled id="quantidade" type="text" class="quantidade" name="quantidade" value="1"/>
+                
+                                            <button class="up d-flex align-items-center justify-content-center">
+                                                <img class="max-w-7" src="images/up.svg" alt="seta para somar">
+                                            </button><!--down-->
+                                        </div><!--dflex-->
+                                    </div><!--d-flex-->                                    
+                                </div><!--extra-->
+
+
+                                <button class="btn-finalizar">Adicionar ao carrinho</button>
                             </div><!--col-md-6-->
                         </div><!--row-->
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <section class="video">
+                                    <div class="box-video">
+                                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ZwnXW_7fzk0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div><!--box-video-->
+                                </section><!--video-->
+                                
+                                <section class="description my-3">
+                                    <h6>Descrição</h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dolor enim, tristique ac placerat non, congue id leo. Vestibulum vehicula maximus nisl, in fringilla magna volutpat at. Vestibulum venenatis, nisl in convallis tincidunt, diam lacus vulputate sapien, vitae accumsan diam nulla sit amet purus. Vestibulum sed nunc sit amet lacus fermentum lobortis.</p>
+                                </section><!--deescription-->
+                            </div><!--col-md-6-->
+                        </div><!--row-->
+                      
                     </div><!--container-->
                 </div><!--modal-produto-->
-
-
-                <!--templete de modal do produto-->
-                <template id="my-template-product">
-                    <swal-html>
-                        
-                    </swal-html>
-                </template>
-                
+                <div class="bg-modal-product"></div>
             </div><!--card-->
 
             <div class="card">
@@ -1328,11 +1442,126 @@
     </section><!--cards-->
 
 
+    <section class="paginacao">
+        <div class="container d-flex justify-content-center">
+            <nav class="pagination-bar"aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+        </div><!--container-->
+    </section><!--paginacao-->
+
+    <section class="bandeiras my-5">
+        <div class="container d-flex flex-wrap justify-content-center align-items-center">
+            <img class="img-fluid" src="images/visa.png" alt="bandeira de pagamento" />
+            <img class="img-fluid" src="images/mastercard.png" alt="bandeira de pagamento" />
+            <img class="img-fluid" src="images/elo.png" alt="bandeira de pagamento" />
+            <img class="img-fluid" src="images/american.png" alt="bandeira de pagamento" />
+            <img class="img-fluid" src="images/hyper.png" alt="bandeira de pagamento" />
+            <img class="img-fluid" src="images/boleto.png" alt="bandeira de pagamento" />
+            <img class="img-fluid" src="images/pix.png" alt="bandeira de pagamento" />
+        </div><!--container-->
+    </section><!--bandeiras-->
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="d-flex footer-col">
+                        <img src="images/localidades.svg" alt="icone de localidade" />
+                        <h6>Localidades</h6>
+                    </div><!--flex-->
+                    <p>Palmas-TO, Brasil</p>
+                </div><!--col-md-3-->
+
+
+                <div class="col-md-3">
+                    <div class="d-flex footer-col">
+                        <img src="images/contato.svg" alt="icone de localidade" />
+                        <h6>Contato</h6>
+                    </div><!--flex-->
+
+                    <div class="contact-footer d-flex">
+                        <img src="images/whatsapp.svg" alt="icone do whatsapp" />
+                        <p>63 99994-9792</p>
+                    </div><!--contact footer-->
+
+                    <div class="contact-footer d-flex">
+                        <img src="images/email.svg" alt="icone do whatsapp" />
+                        <p>Contato@shopito.com</p>
+                    </div><!--contact footer-->
+                    
+                </div><!--col-md-3-->
+
+                <div class="col-md-3">
+                    <div class="d-flex footer-col">
+                        <img src="images/sobre.svg" alt="icone de localidade" />
+                        <h6>Sobre nós</h6>
+                    </div><!--flex-->
+                    <p>O shopito é a plataforma que conecta o comércio local aos clientes. Aqui você encontra produtos de empresas e de vendedores independentes.</p>   
+                </div><!--col-md-3-->
+
+                <div class="col-md-3">
+                    <div class="d-flex footer-col">
+                        <img src="images/sobre.svg" alt="icone de localidade" />
+                        <h6>Nos siga</h6>
+                    </div><!--flex-->
+                <div class="footer-icons d-flex align-items-center">
+                    <a href="https://www.facebook.com/"><img src="images/facebook.svg" alt="icone do facebook" /></a>
+                    <a href="https://www.instagram.com/"><img src="images/instagram.svg" alt="icone do instagram" /></a>
+                    <a href="https://www.youtube.com/?hl=pt&gl=BR"><img src="images/youtube.svg" alt="icone do youtube" /></a>
+                </div>
+                </div><!--col-md-3-->
+            </div><!--row-->
+
+            <div class="politicas d-flex justify-content-center">
+                <span id="politica">Política de privacidade</span>
+                <span id="termos">Termos de uso</span>
+            </div><!--politicas-->
+
+            <div class="row">
+                <div class="col-md-4 order-md-0 order-1">
+                    <p>© 2021 Shopito - Todos os direitos reservados</p>
+                </div><!--col-md-4-->
+
+                <div class="col-md-4 order-md-1 order-2 app">
+                    <div class="d-flex align-items-center justify-content-md-center">
+                        <a href="https://play.google.com/store?hl=pt_BR&gl=US"><img src="images/google-play.png" alt="google play" /></a>
+                        <a href="https://www.apple.com/br/app-store/"><img src="images/appstore.png" alt="appstore" /></a>
+                    </div><!--flex-->
+                </div><!--col-md-4-->
+
+                <div class="col-md-4 order-md-1 order-2 empresa">
+                    <div class="d-flex align-items-center justify-content-md-center">
+                        <span>Criado por:</span>
+                        <a href="https://shopito.com.br/"><img src="images/logo.png" alt="logo da empresa" /></a>
+                    </div><!--flex-->
+                </div><!--col-md-4-->
+            </div><!--row-->
+        </div><!--container-->
+    </footer>
+
+
 
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="js/burger.js"></script>
 <script src="js/main.js"></script>
 <script src="js/slide.js"></script>
+<script src="js/cart.js"></script>
 </body>
 </html>
