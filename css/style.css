@@ -34,8 +34,15 @@ aside.cart .vazio{
     height:400px;
 }
 
+.exluir-btn{
+    max-width:20px;
+    width: 100%;
+}
+
 aside.cart .cart__img{
     max-width: 200px;
+    height: 200px;
+    object-fit: contain;
     width: 100%;
 }
 
@@ -66,7 +73,7 @@ aside.cart .cart__title p{
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 aside.cart .btn-finalizar{

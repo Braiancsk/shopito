@@ -425,45 +425,47 @@
 
 
     <div class="container h-100 d-flex flex-column justify-content-between">
-        <div class="row">
+
+        <div class="row cart-products">
+<!--             
             <div class="col-4">
                 <img class="cart__img" src="images/product.jpg" alt="produto" />
-            </div><!--col-3-->
+            </div>
 
             <div class="col-8">
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="cart__title">
-                        <h5>Tênis masculino</h5>
-                        <p>Lorem Ipsum Silor Amet Lorem Ipsum Silor Amet</p>
-                    </div><!--cart__titlee-->
+                        <h5 id="product-title">Tênis masculino</h5>
+                        <p id="product-description">Lorem Ipsum Silor Amet Lorem Ipsum Silor Amet</p>
+                    </div>
 
                     <div class="excluir">
                         <img class="exluir-btn" src="images/trash.svg" alt="icone de exluir"/>
-                    </div><!--excluir-->
+                    </div>
                     
-                </div><!--flex-->
+                </div>
 
                 <div class="d-flex justify-content-between align-items-center">
-                    <h4 class="cart__price">R$ 180,00</h4>
+                    <h4 class="cart__price">R$ <b id="product-price"></b></h4>
                     <div class="d-flex align-items-center">
                         <button class="down d-flex align-items-center justify-content-center">
                             <img class="max-w-7" src="images/down.svg" alt="seta para subtrair">
-                        </button><!--down-->
+                        </button>
                         
                         <input disabled id="quantidade" type="text" class="quantidade" name="quantidade" value="1"/>
 
                         <button class="up d-flex align-items-center justify-content-center">
                             <img class="max-w-7" src="images/up.svg" alt="seta para somar">
-                        </button><!--down-->
-                    </div><!--dflex-->
-                </div><!--flex-->
+                        </button>
+                    </div>
+                </div>
 
-                <p class="cart__extras">2x (nome do extra), 1x (nome do extra 2), 2x (nome do extra)</p>
+                <p class="cart__extras">2x (nome do extra), 1x (nome do extra 2), 2x (nome do extra)</p> -->
             </div><!--col-md-9-->
         </div><!--row-->
 
         <div class="wrapper">
-            <h2>Valor total: <b>R$ 180,00</b></h2>
+            <h2>Valor total: R$<b id="total-price"></b></h2>
         
             <a class="btn-finalizar" href="checkout.html">Finalizar compra</a>
         </div>
@@ -1254,11 +1256,11 @@
                 <img class="card__img" src="images/product.jpg" alt="produto" />
 
                 <div class="d-flex flex-column justify-content-between card__info">
-                    <h6 class="card__title">Lorem Ipsum silor amet Lorem Ipsum silor amet Lorem Ipsum silor amet Lorem Ipsum silor amet</h6>
+                    <h6 class="card__title">Tênis Masculino</h6>
 
                     <div class="card__price">
-                        <h5>R$ 299,99</h5>
-                        <h6 class="price-dived">Ou 12X de R$ 24,99</h6>
+                        <h5>R$ 280,00</h5>
+                        <h6 class="price-dived">Ou 12X de R$ 23,33</h6>
                     </div><!--price-->
 
                     <div class="card__buttons">
@@ -1417,12 +1419,12 @@
                 <img class="card__img" src="images/product-2.jpg" alt="produto" />
 
                 <div class="d-flex flex-column justify-content-between card__info">
-                    <h6 class="card__title">Lorem Ipsum silor amet Lorem Ipsum silor amet Lorem Ipsum silor amet Lorem Ipsum silor amet</h6>
+                    <h6 class="card__title">Controle de Xbox One</h6>
 
                     <div class="card__price">
-                        <p class="preco-antigo">R$ 399,99</p>
-                        <h5>R$ 299,99</h5>
-                        <h6 class="price-dived">Ou 12X de R$ 24,99</h6>
+                        <p class="preco-antigo">R$ 430,00</p>
+                        <h5>R$ 350,00</h5>
+                        <h6 class="price-dived">Ou 10X de R$ 35,00</h6>
                     </div><!--price-->
 
                     <div class="card__buttons">
@@ -1445,14 +1447,14 @@
             </div><!--card-->
 
             <div class="card">
-                <img class="card__img" src="images/product.jpg" alt="produto" />
+                <img class="card__img" src="images/product-3.jpg" alt="produto" />
 
                 <div class="d-flex flex-column justify-content-between card__info">
-                    <h6 class="card__title">Lorem Ipsum silor amet Lorem Ipsum silor amet Lorem Ipsum silor amet Lorem Ipsum silor amet</h6>
+                    <h6 class="card__title">Relogio masculino</h6>
 
                     <div class="card__price">
-                        <h5>R$ 299,99</h5>
-                        <h6 class="price-dived">Ou 12X de R$ 24,99</h6>
+                        <h5>R$ 150,00</h5>
+                        <h6 class="price-dived">Ou 10X de R$ 15,00</h6>
                     </div><!--price-->
 
                     <div class="card__buttons">
@@ -1475,14 +1477,14 @@
             </div><!--card-->
 
             <div class="card">
-                <img class="card__img" src="images/product.jpg" alt="produto" />
+                <img class="card__img" src="images/product-4.jpg" alt="produto" />
 
                 <div class="d-flex flex-column justify-content-between card__info">
-                    <h6 class="card__title">Lorem Ipsum silor amet Lorem Ipsum silor amet Lorem Ipsum silor amet Lorem Ipsum silor amet</h6>
+                    <h6 class="card__title">Óculos masculino</h6>
 
                     <div class="card__price">
-                        <h5>R$ 299,99</h5>
-                        <h6 class="price-dived">Ou 12X de R$ 24,99</h6>
+                        <h5>R$ 50,00</h5>
+                        <h6 class="price-dived">Ou 12X de R$ 5,00</h6>
                     </div><!--price-->
 
                     <div class="card__buttons">
