@@ -384,7 +384,7 @@ form.logar label{
 section.nav{
     background: #F5F5F5;
     box-shadow: 0px 8px 24px rgba(186, 186, 186, 0.2);
-    padding: 10px 0;
+    padding: 10px 0 0 0;
 }
 
 section.nav ul li{
