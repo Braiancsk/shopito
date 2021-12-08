@@ -1030,6 +1030,12 @@ footer .empresa img{
     section.nav{
         padding: 0;
     }
+    .card{
+        max-width:171px; 
+    }
+    nav{
+        padding: 10px 0;
+    }
 }
 
 @media screen and (max-width: 500px){
@@ -1037,9 +1043,7 @@ footer .empresa img{
         width: 30px;  
     }
         
-    .card{
-        max-width:171px; 
-    }
+  
     .card__info{
         padding: 15px;
     }
