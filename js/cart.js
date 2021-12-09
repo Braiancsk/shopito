@@ -9,14 +9,14 @@ let products = [
     {
     name: 'Controle Xbox One',
     description: 'lorem ipsum dolor sit amet',
-    tag: 'product-2',
+    tag: 'product-3',
     price: 350,
     inCart: 0,
     },
     {
     name: 'Relogio masculino',
     description: 'lorem ipsum dolor sit amet',
-    tag: 'product-3',
+    tag: 'product-2',
     price: 150,
     inCart: 0,
     },
@@ -115,55 +115,71 @@ function displayCart(){
     let cartItems = localStorage.getItem('productsInCart');
     let cartProduct = document.querySelector('.cart-products');
     cartItems = JSON.parse(cartItems);
+    let cartCost = localStorage.getItem('totalCost')
 
     if(cartItems){
        
         Object.values(cartItems).map(item => {
-            cartProduct.innerHTML += `
-
-        <div class="col-4 d-flex align-items-center">
-            <img class="cart__img" src="../images/${item.tag}.jpg" alt="produto" />
-        </div><!--col-3-->
-
-        <div class="col-8 mt-5">
-            <div class="d-flex justify-content-between align-items-center">
-                <div class="cart__title">
-                    <h5 id="product-title">${item.name}</h5>
-                    <p id="product-description">${item.description}</p>
-                </div>
-
-                <div class="excluir">
-                    <img class="exluir-btn" src="images/trash.svg" alt="icone de exluir"/>
-                </div>
-                
+            cartProduct.innerHTML += `           
+            <div class="col-4">
+                <img class="cart__img" src="images/${item.tag}.jpg" alt="produto" />
             </div>
 
-            <div class="d-flex justify-content-between align-items-center">
-                <h4 class="cart__price">R$ <b id="product-price">${item.price}</b></h4>
-                <div class="d-flex align-items-center">
-                    <button class="down d-flex align-items-center justify-content-center">
-                        <img class="max-w-7" src="images/down.svg" alt="seta para subtrair">
-                    </button>
+            <div class="col-8">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="cart__title">
+                        <h5 id="product-title">${item.name}</h5>
+                        <p id="product-description">${item.description}</p>
+                    </div>
+
+                    <div class="excluir">
+                        <img class="exluir-btn" src="images/trash.svg" alt="icone de exluir"/>
+                    </div>
                     
-                    <input disabled id="quantidade" type="text" class="quantidade" name="quantidade" value="${items.inCart}"/>
-
-                    <button class="up d-flex align-items-center justify-content-center">
-                        <img class="max-w-7" src="images/up.svg" alt="seta para somar">
-                    </button>
                 </div>
-            </div>
 
-            <p class="cart__extras">2x (nome do extra), 1x (nome do extra 2), 2x (nome do extra)</p>
-        </div>
+                <div class="d-flex justify-content-between align-items-center">
+                    <h4 class="cart__price">R$ <b id="product-price">${item.price}</b></h4>
+                    <div class="d-flex align-items-center">
+                        <button class="down d-flex align-items-center justify-content-center">
+                            <img class="max-w-7" src="images/down.svg" alt="seta para subtrair">
+                        </button>
+                        
+                        <input disabled id="quantidade" type="text" class="quantidade" name="quantidade" value="${item.inCart}"/>
+
+                        <button class="up d-flex align-items-center justify-content-center">
+                            <img class="max-w-7" src="images/up.svg" alt="seta para somar">
+                        </button>
+                    </div>
+                </div>
+
+                <p class="cart__extras">2x (nome do extra), 1x (nome do extra 2), 2x (nome do extra)</p>
+            </div>
+   
             `
         })
+
+        cartProduct.innerHTML += `
+        <div class="wrapper">
+        <div class="d-flex align-items-center">
+        <h2>Valor total:</h2>
+        <h2>R$ ${cartCost},00</h2>
+        </div>
+        
+    
+        <a class="btn-finalizar" href="checkout.html">Finalizar compra</a>
+        </div>
+        `
     }else{
         cartProduct.innerHTML = `<div class="vazio d-flex flex-column align-items-center justify-content-center mt-4">
         <h4>Seu carrinho está vazio</h4>
         <img class="img-fluid" src="images/plants.png" alt="carrinho vazio" />
         </div>`;
     }
+    
 }
+
+
 
 
 
