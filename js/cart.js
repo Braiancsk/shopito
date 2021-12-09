@@ -138,8 +138,9 @@ function displayCart(){
                     
                 </div>
 
-                <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex flex-wrap justify-content-between align-items-center">
                     <h4 class="cart__price">R$ <b id="product-price">${item.price}</b></h4>
+            
                     <div class="d-flex align-items-center">
                         <button class="down d-flex align-items-center justify-content-center">
                             <img class="max-w-7" src="images/down.svg" alt="seta para subtrair">

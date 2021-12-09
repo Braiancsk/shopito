@@ -986,6 +986,7 @@ section.produtos h1{
     border-radius: 50%;
     background:var(--primary);  
     border:0;
+    margin-right: 5px;
 }
 
 .up{
@@ -994,6 +995,7 @@ section.produtos h1{
     border-radius: 50%;
     background:var(--primary);  
     border:0;
+    margin-left: 5px;
 }
 
 .max-w-7{
@@ -1010,13 +1012,6 @@ section.produtos h1{
     max-width:40px;
     border-radius: 8px;
     text-align: center;
-}
-
-.down{
-    margin-right: 10px;
-}
-.up{
-    margin-left: 10px;
 }
 
 
@@ -1186,7 +1181,7 @@ section.description p{
 }
 
 .label-text{
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 500;
 }
