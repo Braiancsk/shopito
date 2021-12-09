@@ -78,3 +78,29 @@ for(var c = 0; c < card.length; c++){
    });
 
 
+//cupom
+
+let cupom = document.querySelectorAll('.cupom');
+
+cupom.forEach(cupom => {
+    cupom.addEventListener('click',()=>{
+        Swal.fire({
+            template: '#modal-cupom ',
+            showCancelButton: true,
+            cancelButtonText: 'Cancelar',
+          })
+    })
+});
+
+
+let cupom2 = document.querySelectorAll('.cupom2');
+
+cupom2.forEach(cupom => {
+    cupom.addEventListener('click',()=>{
+        Swal.fire({
+            template: '#modal-cupom-2 ',
+            showCancelButton: true,
+            cancelButtonText: 'Cancelar',
+          })
+    })
+});

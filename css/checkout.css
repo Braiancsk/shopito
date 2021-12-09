@@ -26,7 +26,10 @@ aside.menu-mobile{
     margin-bottom: 30px;
 }
 
-
+.logo-img{
+    max-width:100px;
+    width:100%;
+}
 .menu-mobile ul{
     margin-top: 10px;
     padding: 0;
@@ -158,6 +161,7 @@ body{
 nav{
     padding: 30px 0;
     background-color:white;
+    
 }
 
 .search-wrapper{
@@ -487,8 +491,12 @@ footer .footer-icons a:nth-child(2){
 footer .politicas span{
     font-weight: 500;
     font-size:14px;
-    margin:20px 10px;
+    margin-top: 20px;
     cursor: pointer;
+}
+
+footer .politicas span + span{
+    margin-left: 10px;
 }
 
 footer .app img{
@@ -497,6 +505,8 @@ footer .app img{
 
 footer .empresa img{
     margin-left: 10px;
+    max-width: 200px;
+    width: 100%;
 }
 
 .politica-title{
@@ -584,6 +594,21 @@ h2{
     color: #000000;
     max-width:214px;
     margin-top: 20px;
+}
+
+.cart-text{
+    font-size:13px;
+    max-width:200px;
+    margin: 5px 0;
+}
+.compra-segura{
+    max-width: 150px;
+    margin: 20px 0;
+}
+.bandeiras img{
+    margin: 10px;
+    max-width: 50px;
+    width: 100%;
 }
 /* media queries*/
 

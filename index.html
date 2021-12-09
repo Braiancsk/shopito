@@ -37,7 +37,46 @@
 
     <div class="box-entrar__icons-mobile d-flex align-items-center">
         <img src="images/clube.svg" alt="icone de clube de descontos" />
-        <a id="modal-descontos" href="#" class="icon-title">Clube de descontos</a>
+        <a href="#" class="icon-title cupom">Clube de descontos</a>
+
+        
+<!------------------------------modal de cupom---------------------------->
+<template id="modal-cupom">
+    <swal-html>
+        <div class="modal-container">
+            <img class="img-fluid" src="images/img-cupom.jpg" alt="cupom" />
+            <div class="modal-context">
+                <h5>Cupom exclusivo para clientes VIP</h5>
+                <p>Você gosta de economizar? Então participe do club Shopito e ganhe descontos exclusivos nas lojas da sua cidade.</p>
+                <p>São descontos de verdade, pois negociamos direto com as lojas para trazer benefícios para você.</p>
+                
+                <h6>Para participar é só clicar no botão quero economizar.</h6>
+            
+                <div class="d-flex justify-content-between">
+
+                    <div class="box-plano">
+                        <h6>Plano Atual</h6>
+                        <p>2x de R$34,90</p>
+                    </div>
+
+                    <div class="box-plano">
+                        <h6>Plano Semestral</h6>
+                        <p>2X de R$ 24,90</p>
+                    </div>
+
+                </div>
+
+                <div class="d-flex justify-content-center mt-5">
+                    <a class="economizar" target="_blank" href="https://wa.me/5562992455341/?text=Eu%20Gostaria%20de%20mudar%20de%20plano%20">Quero economizar</a>
+                </div>
+            </div>
+        </div>
+    </swal-html>
+    <swal-button type="confirm">
+        Save As
+    </swal-button>
+  </template>
+<!------------------------------fim da modal de cupom---------------------------->
     </div>
 
     <div class="box-entrar__icons-mobile d-flex align-items-center">
@@ -476,7 +515,7 @@
         <div class="container d-flex align-items-center justify-content-between">
             <div class="logo">
                 <a class="desktop" href="index.html">
-                    <img class="img-fluid" src="images/logo.png" alt="logo da empresa" />
+                    <img class="logo-img" src="images/logo.png" alt="logo da empresa" />
                 </a>
                 <button class="hamburger mobile hamburger--collapse" type="button">
                     <span class="hamburger-box">
@@ -500,13 +539,18 @@
 
             <div class="icones d-flex justify-content-around">
                 <div class="icones__wrapper d-flex align-items-center">
+                    <a href="#"><img class="img-fluid desktop" src="images/cupom.svg" alt="icone de contato" /></a>
+                    <a class="desktop cupom-2" href="#">Cupoms</a>
+                </div><!--icones__wrapper-->
+
+                <div class="icones__wrapper d-flex align-items-center">
                     <img id="lupa-mobile" class="img-fluid mobile" src="images/lupa.svg" alt="lupa" />
                     <a href="#"><img class="img-fluid" src="images/suport.svg" alt="icone de contato" /></a>
                     <a class="desktop" href="#">Contato</a>
                 </div><!--icones__wrapper-->
 
                 <div class="icones__wrapper d-flex align-items-center position-relative">
-                    <a  class="mobile" href="#"><img class="img-fluid" src="images/suport.svg" alt="icone de contato" /></a>
+                    <a class="mobile" href="#"><img class="img-fluid cupom-2" src="images/cupom.svg" alt="icone de contato" /></a>
                     <a href="#"><img class="img-fluid" src="images/user.svg" alt="icone de usuário" /></a>
                     <a class="desktop open-box" href="#">Entrar</a>
 
@@ -527,7 +571,7 @@
                             <a href="#" class="icon-title">Meus pedidos</a>
                         </div>
 
-                        <div class="box-entrar__icons d-flex align-items-center">
+                        <div class="box-entrar__icons d-flex align-items-center cupom">
                             <img src="images/clube.svg" alt="icone de clube de descontos" />
                             <a id="modal-descontos" href="#" class="icon-title">Clube de descontos</a>
                         </div>
@@ -1280,7 +1324,7 @@
                 <div id="modal-produto" class="modal-produto">
                     <div class="container">
                         <section class="d-flex justify-content-end"><img id="closeModal" src="images/close.svg" alt="icone fechar"></section>
-                        <div class="row my-5">
+                        <div class="row custom-margin">
                             <div class="col-md-6">
                                 <div class="produto-img">
                                     <div class="tab-content" id="nav-tabContent">
@@ -1295,7 +1339,11 @@
                                         </div>
 
                                         <div class="tab-pane fade" id="produto-4" role="tabpanel" aria-labelledby="produto-4-tab">
-                                            <img class="img-produto" src="images/img-produto.jpg" alt="produto" />
+                                            <section class="video">
+                                                <div class="box-video">
+                                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ZwnXW_7fzk0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                </div><!--box-video-->
+                                            </section><!--video-->
                                         </div>
                                       </div>
                                     
@@ -1314,7 +1362,7 @@
                                       </button>
 
                                       <button class="swiper-slide nav-link" id="produto-4-tab" data-bs-toggle="tab" data-bs-target="#produto-4" type="button" role="tab" aria-controls="produto-4" aria-selected="false">
-                                        <img class="img-produto-tab" src="images/product.jpg" alt="produto" />
+                                        <img class="img-produto-tab" src="images/video-thumb.png" alt="produto" />
                                       </button>
                                     </div>
                                 </nav>
@@ -1323,17 +1371,22 @@
 
 
                             <div class="col-md-6 produto-preco">
-                                <h2>Tênis Masculino</h2>
+                                <h2 class="limite">Tênis Masculino</h2>
                                 <p>Cod: #1234</p>
                                 <h3>R$ 180,00</h3>
                                 <h6>Ou 12x de R$ 15,00</h6>
 
 
                                 <div class="extra mt-5">
-                                    <p>Escolha uma cor:</p>
+                                    <label class="custom-label">Escolha uma cor:</label>
 
                                     <div class="d-flex justify-content-between mt-4">
-                                        <h6>Vermelho</h6>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="vermelho">
+                                            <label class="form-check-label label-text" for="vermelho">
+                                              Vermelho
+                                            </label>
+                                          </div>
 
                                         <div class="d-flex align-items-center">
                                             <button class="down d-flex align-items-center justify-content-center">
@@ -1349,7 +1402,12 @@
                                     </div><!--d-flex-->    
                                     
                                     <div class="d-flex justify-content-between mt-4">
-                                        <h6>Verde</h6>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="verde">
+                                            <label class="form-check-label label-text" for="verde">
+                                              Verde
+                                            </label>
+                                          </div>
 
                                         <div class="d-flex align-items-center">
                                             <button class="down d-flex align-items-center justify-content-center">
@@ -1367,10 +1425,15 @@
 
 
                                 <div class="extra mt-5">
-                                    <p>Escolha uma tamanho:</p>
+                                    <label class="custom-label">Escolha uma tamanho:</label>
 
-                                    <div class="d-flex justify-content-between">
-                                        <h6>Pequeno</h6>
+                                    <div class="d-flex justify-content-between mt-4">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="pequeno">
+                                            <label class="form-check-label label-text" for="pequeno">
+                                              Pequeno
+                                            </label>
+                                          </div>
 
                                         <div class="d-flex align-items-center">
                                             <button class="down d-flex align-items-center justify-content-center">
@@ -1385,7 +1448,12 @@
                                         </div><!--dflex-->
                                     </div><!--d-flex-->                                    
                                 </div><!--extra-->
-
+                                
+                                <div class="d-flex align-items-center total">
+                                    <h2 class="total-modal-produto">Total:</h2>
+                                    <h2 class="total-modal-produto">R$ 00,00</h2>
+                                </div>
+                               
 
                                 <button class="btn-finalizar">Adicionar ao carrinho</button>
                             </div><!--col-md-6-->
@@ -1393,12 +1461,7 @@
 
                         <div class="row">
                             <div class="col-md-6">
-                                <section class="video">
-                                    <div class="box-video">
-                                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ZwnXW_7fzk0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    </div><!--box-video-->
-                                </section><!--video-->
-                                
+                             
                                 <section class="description my-3">
                                     <h6>Descrição</h6>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dolor enim, tristique ac placerat non, congue id leo. Vestibulum vehicula maximus nisl, in fringilla magna volutpat at. Vestibulum venenatis, nisl in convallis tincidunt, diam lacus vulputate sapien, vitae accumsan diam nulla sit amet purus. Vestibulum sed nunc sit amet lacus fermentum lobortis.</p>
@@ -1434,7 +1497,7 @@
                                 <img class="max-w-7" src="images/up.svg" alt="seta para somar">
                             </button><!--down-->
                         </div><!--dflex-->
-
+                        
                         <button class="add-to-cart">Adicionar</button>
                     </div><!--card__buttons-->
                 </div><!--flex-->
@@ -1568,7 +1631,7 @@
 
                 <div class="col-md-3">
                     <div class="d-flex footer-col">
-                        <img src="images/sobre.svg" alt="icone de localidade" />
+                        <img src="images/connect.svg" alt="icone de localidade" />
                         <h6>Nos siga</h6>
                     </div><!--flex-->
                 <div class="footer-icons d-flex align-items-center">
