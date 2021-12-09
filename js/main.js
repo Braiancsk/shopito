@@ -93,7 +93,7 @@ cupom.forEach(cupom => {
 });
 
 
-let cupom2 = document.querySelectorAll('.cupom2');
+let cupom2 = document.querySelectorAll('.cupom-2');
 
 cupom2.forEach(cupom => {
     cupom.addEventListener('click',()=>{

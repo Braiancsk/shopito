@@ -541,6 +541,77 @@
                 <div class="icones__wrapper d-flex align-items-center">
                     <a href="#"><img class="img-fluid desktop" src="images/cupom.svg" alt="icone de contato" /></a>
                     <a class="desktop cupom-2" href="#">Cupoms</a>
+
+                            
+<!------------------------------modal de cupom---------------------------->
+<template id="modal-cupom-2">
+    <swal-html>
+        <div class="modal-container">
+
+<!----------------------cupom único----------------------->
+            <h5 class="mb-3 cupom-box-title">Cupons</h5>
+            <div class="modal-context">
+                
+
+                <div class="d-md-flex justify-content-between">
+                    <img class="img-cupom" src="images/img-cupom.jpg" alt="cupom de desconto" />
+                    
+                    <div class="cupom-text">
+                        <h6 class="cupom-title">Cupom 1</h6>
+                        <input class="d-none limite-check" type="checkbox" name="limite" id="limite">
+                        <p class="limite">Você gosta de economizar? Então participe do club Shopito e ganhe descontos exclusivos nas lojas da sua cidade.</p>
+                        <label for="limite">Ler mais</label>           
+                    </div>
+                   
+                  
+                </div>
+                <button class="pegar">Pegar cupom</button>
+                <div class="line-cupom"></div>
+            </div>
+<!----------------------cupom único----------------------->
+            <div class="modal-context">
+
+                <div class="d-md-flex justify-content-between">
+                    <img class="img-cupom" src="images/cupom2.jpg" alt="cupom de desconto" />
+                    
+                    <div class="cupom-text">
+                        <h6 class="cupom-title">Cupom 2</h6>
+                        <input class="d-none limite-check" type="checkbox" name="limite" id="limite2">
+                        <p class="limite">Você gosta de economizar? Então participe do club Shopito e ganhe descontos exclusivos nas lojas da sua cidade.</p>
+                        <label for="limite2">Ler mais</label>           
+                    </div>
+                   
+                  
+                </div>
+                <button class="pegar">Pegar cupom</button>
+                <div class="line-cupom"></div>
+            </div>
+<!----------------------cupom único----------------------->
+            <div class="modal-context">
+
+                <div class="d-md-flex justify-content-between">
+                    <img class="img-cupom" src="images/cupom3.jpg" alt="cupom de desconto" />
+                    
+                    <div class="cupom-text">
+                        <h6 class="cupom-title">Cupom 3</h6>
+                        <input class="d-none limite-check" type="checkbox" name="limite" id="limite3">
+                        <p class="limite">Você gosta de economizar? Então participe do club Shopito e ganhe descontos exclusivos nas lojas da sua cidade.</p>
+                        <label for="limite3">Ler mais</label>           
+                    </div>
+                   
+                  
+                </div>
+                <button class="pegar">Pegar cupom</button>
+                <div class="line-cupom"></div>
+            </div>
+   
+        </div>
+    </swal-html>
+    <swal-button type="confirm">
+        Save As
+    </swal-button>
+  </template>
+<!------------------------------fim da modal de cupom---------------------------->
                 </div><!--icones__wrapper-->
 
                 <div class="icones__wrapper d-flex align-items-center">
@@ -1257,10 +1328,11 @@
 
                 <div class="filtrar mt-4">
                     <button id="open-modal-filtro" class="filtrar-btn">Filtros</button>
-                  
+
+<!-----------------------------modal de filtro---------------------->           
                     <template id="my-template">
                         <swal-html>
-                            <form action="" autocomplete="off">
+                            <form class="custom-p" action="" autocomplete="off">
                                 <h6 class="box-title-modal d-flex">Preços</h6>
                                 <fieldset class="d-flex flex-column align-items-start mt-3">
                                     <label class="label-modal" for="valor-minimo">Valor mínimo</label>
@@ -1285,6 +1357,7 @@
                             </form>
                         </swal-html>
                       </template>
+<!-----------------------------fim da modal de filtro---------------------->                         
                 </div><!--filtros-->
             </div><!--flex-->
         </div><!--container-->

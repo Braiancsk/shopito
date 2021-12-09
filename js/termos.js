@@ -5,7 +5,10 @@ let politica = document.getElementById('politica');
 politica.addEventListener('click',()=>{  
  Swal.fire({
      html:
-     `<h4 class="politica-title">Política Privacidade</h4>
+     `
+     <div class="custom-p">
+     
+     <h4 class="politica-title">Política Privacidade</h4>
      <p class="politica-text">
      A sua privacidade é importante para nós. É política do Shopito respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site Shopito, e outros sites que possuímos e operamos.
 
@@ -114,6 +117,8 @@ politica.addEventListener('click',()=>{
      <br/>
      Esta política é efetiva a partir de Abril/2021.
      </p>
+     </div>
+     
     `
      ,
      showCloseButton: true,
@@ -137,7 +142,9 @@ let termos = document.getElementById('termos');
 termos.addEventListener('click',()=>{  
  Swal.fire({
      html:
-     `<h4 class="politica-title">Termos de uso</h4>
+     `
+     <div class="custom-p">
+     <h4 class="politica-title">Termos de uso</h4>
      <p class="politica-text">
      O site, o aplicativo e o serviço é operado por Shopito, sendo os e-commerces individuais operados diretamente pelos respectivos lojistas titulares. Assim, o Shopito não se responsabiliza pela autenticidade, qualidade, veracidade, disponibilidade ou qualquer outra questão relativa aos produtos e serviços efetivamente comercializados pelos lojistas, assegurando apenas que estes respeitem as exigências legais pelos seguintes termos, condições e avisos mínimos para acesso, utilização e disponibilização de produtos e serviços por meio de seu site.
      <br/>
@@ -206,6 +213,8 @@ termos.addEventListener('click',()=>{
      <p class="11.2. Estes Termos e Condições de Uso se prestam a estabelecer um procedimento a ser observado pelos lojistas e usuários no exercício do contrato, não retirando ou reduzindo os direitos garantidos por lei.</p>
      
      <strong><p class="politica-text">SHOPITO SOLUÇÕES DE COMERCIO DIGITAL LTDA</p></strong>
+     </div>
+    
      `
      ,
      showCloseButton: true,
