@@ -101,7 +101,6 @@ function setItems(product){
 function totalCost(product){
     // console.log("The product price is", product.price);
     let cartCost = localStorage.getItem('totalCost')
-    console.log("my cart cost is", cartCost);
 
     if(cartCost != null){
         cartCost = parseInt(cartCost);
@@ -143,13 +142,13 @@ function displayCart(){
                     <h4 class="cart__price">R$ <b id="product-price">${item.price}</b></h4>
             
                     <div class="d-flex align-items-center">
-                        <button class="down d-flex align-items-center justify-content-center">
+                        <button onclick="removeItem()" class="down d-flex align-items-center justify-content-center">
                             <img class="max-w-7" src="images/down.svg" alt="seta para subtrair">
                         </button>
                         
                         <input disabled id="quantidade" type="text" class="quantidade" name="quantidade" value="${item.inCart}"/>
 
-                        <button class="up d-flex align-items-center justify-content-center">
+                        <button onclick="addItem()" class="up d-flex align-items-center justify-content-center">
                             <img class="max-w-7" src="images/up.svg" alt="seta para somar">
                         </button>
                     </div>
@@ -182,7 +181,26 @@ function displayCart(){
 }
 
 
+function removeItem(e){
+    let cartProduct = document.querySelector('.cart-products');
+    let cartItems = localStorage.getItem('productsInCart');
+    let cartProductQuantity = document.querySelector('.cart-products');
+    cartItems = JSON.parse(cartItems);
 
+    if(cartItems){
+        Object.values(cartItems).map(value =>{
+            value.inCart = value.inCart - 1;
+            cartProductQuantity.innerHTML =  value.inCart - 1;
+            if(value.inCart == 0){
+                cartProduct.innerHTML = `<div class="vazio d-flex flex-column align-items-center justify-content-center mt-4">
+                <h4>Seu carrinho está vazio</h4>
+                <img class="img-fluid" src="images/plants.png" alt="carrinho vazio" />
+                </div>`;
+            }
+            console.log(value.inCart)
+        })
+    }
+}
 
 
 function onLoadCartNumbers(){
