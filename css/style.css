@@ -511,12 +511,10 @@ nav{
     box-shadow: 0px 10px 10px -10px rgba(33, 35, 38, 0.1);
     border-radius: 8px;
     position:absolute;
-    top: 30px;
+    top: 26px;
     left: -170%;
-    z-index: 999;
     width: 300px;
-    z-index: -999;
-    opacity: 0;
+    display:none;
     overflow:hidden;
     height:0;
     transition: 0.1s ease-in-out;
@@ -524,16 +522,15 @@ nav{
 
 .open-box:hover ~ .box-entrar{
     z-index: 9999;
-    opacity: 1;
     overflow:initial;
     height:auto;
+    display:block;
 }
-
 .box-entrar:hover{
     z-index: 9999;
-    opacity: 1;
     overflow:initial;
     height:auto;
+    display:block;
 }
 
 .user-img{
@@ -646,6 +643,11 @@ form.logar label{
 .icones__wrapper-bag{
     position: relative;
     cursor: pointer;
+    z-index: 9999;
+}
+
+#closeCart{
+    cursor: pointer;
 }
 
 section.nav{
@@ -654,7 +656,7 @@ section.nav{
     padding: 10px 0 0 0;
     position: sticky;
     top: 81px;
-    z-index: 999;
+    z-index: 99;
 }
 
 section.nav ul li{
@@ -698,6 +700,14 @@ section.nav ul li a{
     max-width:1100px;
     overflow:hidden;
     height:0;
+}
+.icones__wrapper label{
+    font-weight: 500;
+    font-size: 14px;
+    margin: 5px 5px 0 5px;
+    text-decoration: none;
+    color: var(--primary);
+    cursor: pointer;
 }
 
 .open:hover ~ .sub-nav{
