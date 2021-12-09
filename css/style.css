@@ -100,6 +100,7 @@
     color:white;
     padding: 5px;
     border-radius: 8px;
+    cursor: pointer;
 }
 .limite-check:checked + p{
     display: -webkit-box;
@@ -778,6 +779,11 @@ section.nav .subnav-item{
 
 section.slide-categorias{
     margin-top: 50px;
+    position: sticky;
+    top: 80px;
+    z-index: 99;
+    padding: 10px 0;
+    background: #e5e5e5;
 }
 
 section.slide-categorias .swiper-slide img{

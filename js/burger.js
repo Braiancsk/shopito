@@ -34,9 +34,10 @@ burger.addEventListener('click', ()=>{
 
 let pesquisa = document.getElementById('pesquisa-mobile');
 let lupa = document.getElementById('lupa-mobile');
-
+let input = document.querySelector('.search-wrapper__input-mobile');
 lupa.addEventListener('click',()=>{
   pesquisa.classList.toggle('active-search');
+  input.focus();
 })
 
 
