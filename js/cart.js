@@ -7,19 +7,20 @@ let products = [
     inCart: 0,
     },
     {
-    name: 'Controle Xbox One',
-    description: 'lorem ipsum dolor sit amet',
-    tag: 'product-3',
-    price: 350,
-    inCart: 0,
-    },
-    {
     name: 'Relogio masculino',
     description: 'lorem ipsum dolor sit amet',
     tag: 'product-2',
     price: 150,
     inCart: 0,
     },
+    {
+    name: 'Controle Xbox One',
+    description: 'lorem ipsum dolor sit amet',
+    tag: 'product-3',
+    price: 350,
+    inCart: 0,
+    },
+    
     {
     name: 'Óculos masculino',
     description: 'lorem ipsum dolor sit amet',
@@ -118,7 +119,7 @@ function displayCart(){
     let cartCost = localStorage.getItem('totalCost')
 
     if(cartItems){
-       
+       cartProduct.innerHTML = '';
         Object.values(cartItems).map(item => {
             cartProduct.innerHTML += `           
             <div class="col-4">
@@ -158,7 +159,7 @@ function displayCart(){
             </div>
    
             `
-        })
+        });
 
         cartProduct.innerHTML += `
         <div class="wrapper">

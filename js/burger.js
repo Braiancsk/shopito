@@ -59,7 +59,7 @@ let closeCart = document.getElementById('closeCart');
 
 cartBtn.addEventListener('click', ()=>{
   cart.classList.toggle('cart-active');
-  
+  displayCart();
    if(cart.classList.contains('cart-active')){
      document.body.style.overflow = 'hidden';
      bg.style.display = 'block';
