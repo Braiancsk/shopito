@@ -773,7 +773,7 @@ section.nav{
     padding: 10px 0 0 0;
     position: sticky;
     top: 81px;
-    z-index: 99;
+    z-index: 999;
 }
 
 section.nav ul li{

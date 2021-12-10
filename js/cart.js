@@ -181,27 +181,6 @@ function displayCart(){
 }
 
 
-function removeItem(e){
-    let cartProduct = document.querySelector('.cart-products');
-    let cartItems = localStorage.getItem('productsInCart');
-    let cartProductQuantity = document.querySelector('.cart-products');
-    cartItems = JSON.parse(cartItems);
-
-    if(cartItems){
-        Object.values(cartItems).map(value =>{
-            value.inCart = value.inCart - 1;
-            cartProductQuantity.innerHTML =  value.inCart - 1;
-            if(value.inCart == 0){
-                cartProduct.innerHTML = `<div class="vazio d-flex flex-column align-items-center justify-content-center mt-4">
-                <h4>Seu carrinho está vazio</h4>
-                <img class="img-fluid" src="images/plants.png" alt="carrinho vazio" />
-                </div>`;
-            }
-            console.log(value.inCart)
-        })
-    }
-}
-
 
 function onLoadCartNumbers(){
     let productNumbers = localStorage.getItem('cartNumbers');

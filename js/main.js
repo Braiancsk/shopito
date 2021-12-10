@@ -3,17 +3,20 @@ let subtract = document.querySelectorAll('.down')
 let quantity = document.getElementById('quantidade');
 
 
-for(var i = 0; i < plus.length; i++){
-    var newValue = quantity.value++;  
-    plus[i].addEventListener('click', (e)=>{
-        e.stopPropagation();
-        var newPlus = parseInt(quantity.value++);
-
-        quantity.innerHTML = newPlus;
-     
-        
-    });
+function addQuantidade(){
+    for(var i = 0; i < plus.length; i++){
+        var newValue = quantity.value++;  
+        plus[i].addEventListener('click', (e)=>{
+            e.stopPropagation();
+            var newPlus = parseInt(quantity.value++);
+    
+            quantity.innerHTML = newPlus;
+         
+            
+        });
+    }
 }
+addQuantidade();
 
 function removerQuantidade(e){
     for(var i = 0; i < subtract.length; i++){
