@@ -773,7 +773,7 @@ section.nav{
     padding: 10px 0 0 0;
     position: sticky;
     top: 81px;
-    z-index: 999;
+    z-index: 99;
 }
 
 section.nav ul li{
@@ -1458,6 +1458,7 @@ footer .empresa img{
     }
     section.nav{
         padding: 0;
+        z-index: 999;
     }
     .card{
         max-width:171px; 
